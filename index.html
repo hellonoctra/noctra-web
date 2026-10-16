@@ -2,15 +2,32 @@
 <html lang="es"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Noctra — Estudio de contenido</title>
+<title>Noctra — Dirección de contenido</title>
+<meta name="description" content="Noctra es dirección de contenido desde Bogotá: estrategia, mensaje, diseño y video a una sola voz. Tu marca, con la presencia que merece.">
+<link rel="canonical" href="https://noctra.art/">
+<meta name="theme-color" content="#0C0B0A">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Noctra">
+<meta property="og:locale" content="es_CO">
+<meta property="og:url" content="https://noctra.art/">
+<meta property="og:title" content="Noctra — La forma correcta de ser visto">
+<meta property="og:description" content="Dirección de contenido. Tu marca, con la presencia que merece.">
+<meta property="og:image" content="https://noctra.art/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NOCTRA — La forma correcta de ser visto">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
 <style>
 :root{
   color-scheme: dark;
-  --black:#0B090A; --black2:#150D10; --cream:#EADEDD; --body:#C6BBA6;
-  --dim:#8A7A7C; --wine:#C69A55; --wine:#B12F49; --line:rgba(235,224,203,0.12);
+  --black:#0C0B0A; --cream:#EDE6D8; --body:#8C857A;
+  --dim:#8C857A; --wine:#8E2439; --wine-text:#C9566C; --line:#2A2723;
   --serif:'Cormorant Garamond', Georgia, serif;
   --sans:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   box-sizing:border-box;
@@ -23,8 +40,7 @@ body{
   background:var(--black); color:var(--cream); font-family:var(--sans);
   -webkit-font-smoothing:antialiased; overflow-x:hidden; line-height:1.6;
   background-image:
-    radial-gradient(60% 40% at 50% 0%, rgba(177,47,73,0.18), rgba(11,9,10,0) 60%),
-    linear-gradient(170deg, var(--black), var(--black2));
+    radial-gradient(75% 55% at 50% 0%, rgba(142,36,57,0.42), rgba(142,36,57,0.12) 45%, rgba(12,11,10,0) 75%);
   background-attachment:fixed;
 }
 .grain{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
@@ -34,28 +50,28 @@ body{
 
 /* nav */
 nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(8px);
-  background:rgba(11,9,10,0.55);border-bottom:1px solid var(--line);
+  background:rgba(12,11,10,0.55);border-bottom:1px solid var(--line);
   padding-top:env(safe-area-inset-top,0px);}
 nav .container{display:flex;justify-content:space-between;align-items:center;height:64px;}
 .brand{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:4px;color:var(--cream);text-decoration:none;}
 .navcta{font-family:var(--sans);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cream);
   text-decoration:none;border:1px solid var(--line);padding:9px 16px;border-radius:2px;transition:.2s;}
-.navcta:hover{border-color:var(--wine);color:var(--wine);}
+.navcta:hover{border-color:var(--wine);color:var(--wine-text);}
 
 /* hero */
 .hero{min-height:calc(100vh - 64px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 28px;}
-.mark{width:46px;height:46px;margin-bottom:34px;opacity:.95;}
-.eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--wine);margin-bottom:26px;}
+.mark{width:72px;height:72px;margin-bottom:30px;overflow:visible;}
+.eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--wine-text);margin-bottom:26px;}
 .wordmark{font-family:var(--serif);font-weight:600;font-size:clamp(64px,15vw,150px);letter-spacing:.06em;line-height:.9;color:var(--cream);}
 .slogan{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(20px,4vw,30px);color:var(--body);margin-top:20px;}
 .subline{font-family:var(--sans);font-size:clamp(14px,2.4vw,17px);color:var(--dim);margin-top:26px;max-width:540px;}
 .btn{display:inline-block;margin-top:38px;font-family:var(--sans);font-size:13px;letter-spacing:2px;text-transform:uppercase;
   color:var(--cream);text-decoration:none;border:1px solid var(--wine);padding:15px 34px;border-radius:2px;transition:.2s;}
-.btn:hover{background:var(--wine);color:#0B090A;}
+.btn:hover{background:var(--wine);color:var(--cream);}
 
 /* sections */
 section.block{padding:clamp(70px,12vh,130px) 0;border-top:1px solid var(--line);position:relative;}
-.label{font-family:var(--sans);font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--wine);margin-bottom:24px;}
+.label{font-family:var(--sans);font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--wine-text);margin-bottom:24px;}
 .h2{font-family:var(--serif);font-weight:500;font-size:clamp(30px,6vw,52px);line-height:1.1;color:var(--cream);letter-spacing:.01em;}
 .h2 .it{font-style:italic;color:var(--wine);}
 .lede{font-family:var(--serif);font-size:clamp(17px,2.6vw,21px);line-height:1.6;color:var(--body);max-width:620px;margin-top:22px;}
@@ -71,7 +87,7 @@ section.block{padding:clamp(70px,12vh,130px) 0;border-top:1px solid var(--line);
 /* method */
 .steps{margin-top:26px;border-top:1px solid var(--line);}
 .step{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline;}
-.step .sn{font-family:var(--sans);font-size:12px;letter-spacing:2px;color:var(--wine);}
+.step .sn{font-family:var(--sans);font-size:12px;letter-spacing:2px;color:var(--wine-text);}
 .step .st{font-family:var(--serif);font-weight:600;font-size:23px;color:var(--cream);}
 .step .sd{font-family:var(--sans);font-size:14.5px;color:var(--body);grid-column:2;margin-top:-6px;}
 
@@ -81,7 +97,7 @@ section.block{padding:clamp(70px,12vh,130px) 0;border-top:1px solid var(--line);
 .cierre p{font-family:var(--serif);font-style:italic;font-size:clamp(17px,3vw,22px);color:var(--body);margin:20px auto 0;max-width:560px;}
 .contacts{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:center;margin-top:40px;}
 .contacts a{font-family:var(--sans);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--cream);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:4px;transition:.2s;}
-.contacts a:hover{color:var(--wine);border-color:var(--wine);}
+.contacts a:hover{color:var(--wine-text);border-color:var(--wine);}
 
 footer{border-top:1px solid var(--line);padding:40px 0 60px;text-align:center;}
 footer .fw{font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:5px;color:var(--cream);}
@@ -93,61 +109,144 @@ footer .fm{font-family:var(--sans);font-size:11px;letter-spacing:2px;text-transf
   .step{grid-template-columns:52px 1fr;}
   nav .container{height:58px;}
 }
-</style></head>
+
+/* ---------- movimiento ---------- */
+:root{--ease:cubic-bezier(.22,.61,.36,1);}
+
+/* barra de progreso */
+.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:20;pointer-events:none;
+  background:linear-gradient(90deg,rgba(142,36,57,.4),var(--wine));
+  transform:scaleX(0);transform-origin:0 50%;}
+
+/* menú: transparente arriba, cristal al bajar */
+nav{background:rgba(12,11,10,0);border-bottom-color:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;
+  transition:background .4s var(--ease),border-color .4s var(--ease),backdrop-filter .4s var(--ease);}
+nav.scrolled{background:rgba(12,11,10,.72);border-bottom-color:var(--line);
+  backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);}
+nav .container{transition:height .4s var(--ease);}
+nav.scrolled .container{height:56px;}
+.navlinks{display:flex;align-items:center;gap:30px;}
+.navlinks a:not(.navcta){position:relative;font-family:var(--sans);font-size:11.5px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--dim);text-decoration:none;padding:6px 0;transition:color .3s;}
+.navlinks a:not(.navcta)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--wine);
+  transform:scaleX(0);transform-origin:0 50%;transition:transform .45s var(--ease);}
+.navlinks a:not(.navcta):hover,.navlinks a.active{color:var(--cream);}
+.navlinks a:not(.navcta):hover::after,.navlinks a.active::after{transform:scaleX(1);}
+@media(max-width:760px){
+  .navlinks{gap:0;}
+  .navlinks a:not(.navcta){display:none;}
+  nav.scrolled .container{height:52px;}
+}
+
+/* entrada del inicio */
+@keyframes rise{from{opacity:0;transform:translateY(22px);filter:blur(6px);}to{opacity:1;transform:none;filter:none;}}
+@keyframes draw{to{stroke-dashoffset:0;}}
+@keyframes moonrise{from{opacity:0;filter:blur(6px);}to{opacity:1;filter:none;}}
+.hero > *{animation:rise 1.1s var(--ease) both;}
+.hero .mark{animation-delay:.1s;}
+.hero .eyebrow{animation-delay:.35s;}
+.hero .wordmark{animation:none;}
+@keyframes letterin{from{opacity:0;transform:translateX(-60px);filter:blur(8px);}to{opacity:1;transform:none;filter:none;}}
+.wordmark span{display:inline-block;animation:letterin 1s var(--ease) both;animation-delay:calc(.5s + var(--i) * .12s);}
+.hero .slogan{animation-delay:1.45s;}
+.hero .subline{animation-delay:1.65s;}
+.hero .btn{animation-delay:1.85s;}
+.mark circle{stroke-dasharray:390;stroke-dashoffset:390;animation:draw 2s var(--ease) .2s forwards;}
+.mark path{opacity:0;animation:moonrise 1.4s var(--ease) .7s forwards;}
+
+/* botón principal: el vino entra deslizando */
+.btn{position:relative;overflow:hidden;isolation:isolate;}
+.btn::before{content:"";position:absolute;inset:0;background:var(--wine);z-index:-1;
+  transform:scaleX(0);transform-origin:0 50%;transition:transform .5s var(--ease);}
+.btn:hover{background:transparent;color:var(--cream);}
+.btn:hover::before{transform:scaleX(1);}
+
+/* aparición al hacer scroll (solo si hay JavaScript) */
+.js .reveal{opacity:0;transform:translateY(28px);
+  transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s);}
+.js .reveal.in{opacity:1;transform:none;}
+
+/* tarjetas */
+.card{position:relative;transition:background .5s var(--ease),box-shadow .5s var(--ease),transform .5s var(--ease);}
+.card .n{display:inline-block;transition:transform .5s var(--ease);}
+.card:hover{transform:translateY(-4px);z-index:1;
+  box-shadow:inset 0 0 0 1px var(--wine);}
+.card:hover .n{transform:translateX(6px);}
+.js .card.reveal{transition:opacity 1s var(--ease),transform 1s var(--ease),background .5s var(--ease),box-shadow .5s var(--ease);}
+
+/* pasos del método */
+.step .sn,.step .st{transition:transform .5s var(--ease),color .4s;}
+.step:hover .sn{transform:translateX(6px);}
+.step:hover .st{color:var(--wine);}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation:none !important;transition:none !important;}
+  .mark circle{stroke-dashoffset:0;}
+  .mark path{opacity:1;}
+  .js .reveal{opacity:1;transform:none;}
+  .progress{display:none;}
+}
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
 <body>
 <div class="grain"></div>
+<div class="progress" aria-hidden="true"></div>
 <div class="wrap">
 
 <nav><div class="container">
   <a class="brand" href="#top">NOCTRA</a>
-  <a class="navcta" href="mailto:hello@noctra.art">Escríbenos</a>
+  <div class="navlinks">
+    <a href="#estudio">Estudio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#metodo">Método</a>
+    <a href="#contacto">Contacto</a>
+    <a class="navcta" href="mailto:hello@noctra.art">Escríbenos</a>
+  </div>
 </div></nav>
 
 <header class="hero" id="top">
-  <svg class="mark" viewBox="0 0 120 120"><circle cx="60" cy="60" r="40" fill="none" stroke="#B12F49" stroke-width="1.2"/><path d="M60 8 L60 20 M60 100 L60 112 M8 60 L20 60 M100 60 L112 60" stroke="#B12F49" stroke-width="1" opacity=".6"/></svg>
-  <div class="eyebrow">Estudio de contenido</div>
-  <div class="wordmark">NOCTRA</div>
+  <svg class="mark" viewBox="37 37 126 126" aria-hidden="true"><circle cx="100" cy="100" r="62" fill="none" stroke="#EDE6D8" stroke-width="0.8" stroke-opacity="0.35" transform="rotate(-120 100 100)"/><path d="M151.507,134.511 A62,62 0 1 1 90.552,38.724 A58,58 0 1 0 151.507,134.511 Z" fill="#EDE6D8"/></svg>
+  <div class="eyebrow">Dirección de contenido</div>
+  <h1 class="wordmark" aria-label="NOCTRA"><span aria-hidden="true" style="--i:0">N</span><span aria-hidden="true" style="--i:1">O</span><span aria-hidden="true" style="--i:2">C</span><span aria-hidden="true" style="--i:3">T</span><span aria-hidden="true" style="--i:4">R</span><span aria-hidden="true" style="--i:5">A</span></h1>
   <div class="slogan">La forma correcta de ser visto.</div>
-  <p class="subline">Pensamos y producimos a una sola voz: estrategia, mensaje, diseño y video bajo una misma dirección.</p>
+  <p class="subline">Tu marca, con la presencia que merece.</p>
   <a class="btn" href="mailto:hello@noctra.art">Hablemos</a>
 </header>
 
-<section class="block"><div class="container">
+<section class="block" id="estudio"><div class="container">
   <div class="label">Qué es Noctra</div>
-  <div class="h2">No hacemos posts.<br>Hacemos que tu marca<br><span class="it">se reconozca a sí misma.</span></div>
-  <p class="lede">Noctra es un estudio de contenido que <b>piensa y produce a una sola voz</b>. Estrategia, mensaje, diseño y video bajo una misma dirección — para que todo lo que tu marca dice y muestra pertenezca al mismo lugar.</p>
+  <h2 class="h2">Creemos en las marcas<br>que se hacen notar<br><span class="it">por lo que son.</span></h2>
+  <p class="lede">Cuidamos su presencia, su voz, su mundo. <b>En Noctra trabajamos para que se note.</b></p>
+  <p class="lede">Estrategia, mensaje, diseño y video. Todo lo que tu marca necesita para comunicar, <b>pensado y producido en un mismo lugar.</b></p>
 </div></section>
 
-<section class="block"><div class="container">
-  <div class="label">Para quién</div>
-  <div class="h2">Cuando cada pieza sale de una mano distinta,<br><span class="it">la marca se rompe.</span></div>
-  <p class="lede">Un estratega. Un diseñador. Un editor. Tres voces que no se reconocen entre sí — y una marca que se diluye. <b>Noctra dirige todo desde un mismo lugar.</b> Para quien ya se cansó de publicar por publicar.</p>
-</div></section>
 
-<section class="block"><div class="container">
+<section class="block" id="servicios"><div class="container">
   <div class="label">Qué hacemos</div>
-  <div class="h2">Tres frentes,<br>una sola <span class="it">dirección.</span></div>
+  <h2 class="h2">Cada parte de tu marca,<br><span class="it">con intención.</span></h2>
   <div class="grid">
-    <div class="card"><div class="n">I</div><h3>Diagnóstico + Estrategia</h3><p>Leemos tu presencia, hallamos la grieta y trazamos el rumbo: qué decir, a quién y con qué voz.</p></div>
-    <div class="card"><div class="n">II</div><h3>Gestión mensual de contenido</h3><p>Dirección editorial, calendario y copy. Publicar deja de ser azar: se vuelve criterio y consistencia.</p></div>
-    <div class="card"><div class="n">III</div><h3>Producción dirigida</h3><p>Diseño y video que nacen de la estrategia. Nada suelto. Todo, una sola voz.</p></div>
+    <div class="card"><div class="n">I</div><h3>Diagnóstico + Estrategia</h3><p>Empezamos por conocer tu marca, y desde ahí decidimos contigo qué decir, a quién y cómo.</p></div>
+    <div class="card"><div class="n">II</div><h3>Gestión mensual de contenido</h3><p>Línea editorial, calendario y copy. Para que publicar tenga criterio y constancia.</p></div>
+    <div class="card"><div class="n">III</div><h3>Producción</h3><p>Diseño y video que le dan cuerpo a lo que tu marca quiere comunicar.</p></div>
   </div>
 </div></section>
 
-<section class="block"><div class="container">
+<section class="block" id="metodo"><div class="container">
   <div class="label">Cómo trabajamos</div>
-  <div class="h2">El Método <span class="it">Noctra</span></div>
+  <h2 class="h2">El Método <span class="it">Noctra</span></h2>
   <div class="steps">
-    <div class="step"><div class="sn">01</div><div class="st">Diagnóstico</div><div class="sd">Escuchamos y leemos la marca. Datos, contexto, voz.</div></div>
-    <div class="step"><div class="sn">02</div><div class="st">Dirección</div><div class="sd">Trazamos el rumbo: estrategia, tono, línea editorial.</div></div>
-    <div class="step"><div class="sn">03</div><div class="st">Ejecución</div><div class="sd">Producimos bajo una sola dirección. Coherencia en cada pieza.</div></div>
-    <div class="step"><div class="sn">04</div><div class="st">Consistencia</div><div class="sd">Sostenemos y medimos. La marca empieza a reconocerse a sí misma.</div></div>
+    <div class="step"><div class="sn">01</div><div class="st">Diagnóstico</div><div class="sd">Escuchamos tu marca: qué es, cómo se ve hoy y a quién le habla.</div></div>
+    <div class="step"><div class="sn">02</div><div class="st">Dirección</div><div class="sd">Definimos contigo el rumbo: qué decir, con qué tono y en qué canales.</div></div>
+    <div class="step"><div class="sn">03</div><div class="st">Producción</div><div class="sd">Damos cuerpo a cada pieza bajo una misma mirada, para que todo hable con la misma voz.</div></div>
+    <div class="step"><div class="sn">04</div><div class="st">Constancia</div><div class="sd">Publicamos, medimos y ajustamos. Así tu marca se nota, y se sostiene.</div></div>
   </div>
 </div></section>
 
-<section class="block cierre"><div class="container">
-  <div class="big">Empecemos.</div>
-  <p>Cuéntanos qué marca quieres que se reconozca a sí misma, y armamos una propuesta a tu medida.</p>
+<section class="block cierre" id="contacto"><div class="container">
+  <h2 class="big">Empecemos.</h2>
+  <p>Cuéntanos qué tienes en mente y creamos una propuesta a tu medida.</p>
   <div class="contacts">
     <a href="mailto:hello@noctra.art">hello@noctra.art</a>
     <a href="https://instagram.com/noctra.brandco" target="_blank" rel="noopener">@noctra.brandco</a>
@@ -157,8 +256,69 @@ footer .fm{font-family:var(--sans);font-size:11px;letter-spacing:2px;text-transf
 <footer>
   <div class="fw">NOCTRA</div>
   <div class="fs">La forma correcta de ser visto</div>
-  <div class="fm">Estudio de contenido · Bogotá, Colombia · noctra.art</div>
+  <div class="fm">Dirección de contenido · Bogotá, Colombia · noctra.art</div>
 </footer>
 
 </div>
+
+<script>
+(function(){
+  var nav = document.querySelector('nav');
+  var bar = document.querySelector('.progress');
+
+  // menú al bajar + barra de progreso
+  var ticking = false;
+  function onScroll(){
+    var y = window.scrollY, max = document.documentElement.scrollHeight - innerHeight;
+    nav.classList.toggle('scrolled', y > 12);
+    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(y / max, 1) : 0) + ')';
+    ticking = false;
+  }
+  addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
+  addEventListener('resize', onScroll);
+  onScroll();
+
+  // aparición al hacer scroll, en cascada dentro de cada grupo
+  var groups = [
+    ['section.block .label, section.block .h2, section.block .lede', .12],
+    ['.card', .15],
+    ['.step', .12],
+    ['.cierre .big, .cierre p, .contacts', .15],
+    ['footer > *', .1]
+  ];
+  var items = [];
+  groups.forEach(function(g){
+    document.querySelectorAll(g[0]).forEach(function(el){
+      var sibs = Array.prototype.filter.call(el.parentNode.children, function(s){ return s.matches(g[0]); });
+      el.style.setProperty('--d', (sibs.indexOf(el) * g[1]) + 's');
+      el.classList.add('reveal');
+      items.push(el);
+    });
+  });
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -10% 0px', threshold:.12});
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  // enlace activo del menú según la sección visible
+  var map = {estudio:'estudio', servicios:'servicios', metodo:'metodo', contacto:'contacto'};
+  var links = document.querySelectorAll('.navlinks a[href^="#"]');
+  function setActive(id){
+    links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#' + id); });
+  }
+  if('IntersectionObserver' in window){
+    var so = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting) setActive(map[e.target.id]); });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(map).forEach(function(id){ var s = document.getElementById(id); if(s) so.observe(s); });
+    new IntersectionObserver(function(entries){
+      if(entries[0].isIntersecting) setActive(null);
+    }, {rootMargin:'-45% 0px -50% 0px'}).observe(document.getElementById('top'));
+  }
+})();
+</script>
 </body></html>
