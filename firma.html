@@ -12,6 +12,7 @@
   .help{font-size:14px;line-height:1.6;color:#5E584F;margin:0 0 28px;}
   .sheet{background:#fff;border:1px solid #B9B1A3;padding:28px;}
   button{margin-top:20px;font:inherit;font-size:12px;letter-spacing:2px;text-transform:uppercase;background:#8E2439;color:#EDE6D8;border:0;padding:12px 20px;cursor:pointer;}
+  button.alt{background:transparent;color:#0C0B0A;border:1px solid #0C0B0A;margin-left:8px;}
   button:focus-visible{outline:2px solid #0C0B0A;outline-offset:2px;}
   .ok{margin-left:12px;font-size:13px;color:#5E584F;}
 </style>
@@ -38,9 +39,9 @@
   <tr>
     <td style="padding:10px 0 0 0;border-top:1px solid #B9B1A3;font-family:Helvetica,Arial,sans-serif;font-size:12px;line-height:20px;color:#5E584F;">
       <a href="mailto:hello@noctra.art" style="color:#0C0B0A;text-decoration:none;">hello@noctra.art</a>
-      &nbsp;·&nbsp;
+      &nbsp;&nbsp;<span style="color:#B9B1A3;">|</span>&nbsp;&nbsp;
       <a href="https://noctra.art" style="color:#0C0B0A;text-decoration:none;">noctra.art</a>
-      &nbsp;·&nbsp;
+      &nbsp;&nbsp;<span style="color:#B9B1A3;">|</span>&nbsp;&nbsp;
       <a href="https://instagram.com/noctra.brandco" style="color:#0C0B0A;text-decoration:none;">@noctra.brandco</a>
     </td>
   </tr>
@@ -51,9 +52,24 @@
 <!-- firma: fin -->
   </div>
 
-  <button type="button" id="copiar">Copiar firma</button><span class="ok" id="ok" aria-live="polite"></span>
+  <button type="button" id="copiar">Copiar firma</button>
+  <button type="button" id="copiar-html" class="alt">Copiar código HTML</button><span class="ok" id="ok" aria-live="polite"></span>
+  <p class="help" style="margin-top:18px">Si al pegar la firma no aparece el logo, usa <b>Copiar código HTML</b> y pégalo en el modo de código del editor de firmas (suele ser un botón <b>&lt;/&gt;</b> o <b>HTML</b>).</p>
 </div>
 <script>
+document.getElementById('copiar-html').addEventListener('click', function(){
+  var ok = document.getElementById('ok');
+  var html = document.querySelector('#firma table').outerHTML;
+  function fallback(){
+    var t = document.createElement('textarea'); t.value = html; document.body.appendChild(t); t.select();
+    var done = false; try { done = document.execCommand('copy'); } catch(e) {}
+    t.remove();
+    ok.textContent = done ? 'Código copiado.' : 'No se pudo copiar automáticamente.';
+  }
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(html).then(function(){ ok.textContent = 'Código copiado.'; }, fallback);
+  } else { fallback(); }
+});
 document.getElementById('copiar').addEventListener('click', function(){
   var el = document.getElementById('firma');
   var ok = document.getElementById('ok');
